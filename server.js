@@ -14,7 +14,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// ✅ Use memory storage (no saving to disk)
 const upload = multer({ storage: multer.memoryStorage() });
 
 // Upload route
